@@ -12,6 +12,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [ShellComponent],
+  exports: [RouterModule],
   imports: [
     RouterModule.forRoot(routes)
   ]
