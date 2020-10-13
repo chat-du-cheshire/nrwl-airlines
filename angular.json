@@ -164,6 +164,46 @@
           }
         }
       }
+    },
+    "data-access": {
+      "projectType": "library",
+      "root": "libs/booking/data-access",
+      "sourceRoot": "libs/booking/data-access/src",
+      "prefix": "booking",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "libs/booking/data-access/tsconfig.lib.json",
+            "project": "libs/booking/data-access/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/booking/data-access/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/booking/data-access/src/test.ts",
+            "tsConfig": "libs/booking/data-access/tsconfig.spec.json",
+            "karmaConfig": "libs/booking/data-access/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/booking/data-access/tsconfig.lib.json",
+              "libs/booking/data-access/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {

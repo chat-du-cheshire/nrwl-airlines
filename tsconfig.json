@@ -22,6 +22,10 @@
     "paths": {
       "@nrwl-airlines/booking/feature-shell": [
         "libs/booking/feature-shell/src/index.ts"
+      ],
+      "data-access": [
+        "dist/data-access/data-access",
+        "dist/data-access"
       ]
     }
   },
