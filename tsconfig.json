@@ -23,9 +23,14 @@
       "@nrwl-airlines/booking/feature-shell": [
         "libs/booking/feature-shell/src/index.ts"
       ],
-      "data-access": [
-        "dist/data-access/data-access",
-        "dist/data-access"
+      "@nrwl-airlines/booking/data-access": [
+        "libs/booking/data-access/src/index.ts"
+      ],
+      "@nrwl-airlines/shared/data-access": [
+        "libs/shared/data-access/src/index.ts"
+      ],
+      "@nrwl-airlines/shared/environments": [
+        "libs/shared/environments/src/index.ts"
       ]
     }
   },
