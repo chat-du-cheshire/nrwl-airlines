@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
-import { StoreModule } from '@ngrx/store';
-import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import {NgModule} from '@angular/core';
+import {StoreModule} from '@ngrx/store';
+import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 
-import { metaReducers, reducers } from './+state';
+import {metaReducers, reducers} from './+state';
 import {environment} from '@nrwl-airlines/shared/environments';
-import { EffectsModule } from '@ngrx/effects';
-import { AppEffects } from './+state/app.effects';
+import {EffectsModule} from '@ngrx/effects';
+import {AppEffects} from './+state/app.effects';
 
 @NgModule({
   imports: [
@@ -20,4 +20,5 @@ import { AppEffects } from './+state/app.effects';
     EffectsModule.forRoot([AppEffects]),
   ],
 })
-export class SharedDataAccessModule {}
+export class SharedDataAccessModule {
+}
