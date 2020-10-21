@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DataAccessComponent } from './data-access.component';
+import { FlightSearchComponent } from './flight-search.component';
 
-describe('DataAccessComponent', () => {
-  let component: DataAccessComponent;
-  let fixture: ComponentFixture<DataAccessComponent>;
+describe('FlightSearchComponent', () => {
+  let component: FlightSearchComponent;
+  let fixture: ComponentFixture<FlightSearchComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DataAccessComponent ]
+      declarations: [ FlightSearchComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DataAccessComponent);
+    fixture = TestBed.createComponent(FlightSearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
