@@ -22,6 +22,11 @@ const routes: Routes = [
       loadChildren: () =>
         import('@nrwl-airlines/booking/feature-passenger-info')
           .then(esModule => esModule.BookingFeaturePassengerInfoModule),
+    }, {
+      path: 'seatmap', // 👈
+      loadChildren: () =>
+        import('@nrwl-airlines/seatmap/feature-seat-listing')
+          .then(esModule => esModule.SeatmapFeatureSeatListingModule),
     }],
   },
 ];
