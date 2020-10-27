@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {DateTime} from 'luxon';
+import {formatDate} from '@nrwl-airlines/shared/util-formatting';
 
 @Component({
   selector: 'seatmap-seat-listing',
@@ -6,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./seat-listing.component.css']
 })
 export class SeatListingComponent implements OnInit {
+
+  get today(): string { // 👈
+    const now = DateTime.local();
+
+    return formatDate(now);
+  }
 
   constructor() { }
 
