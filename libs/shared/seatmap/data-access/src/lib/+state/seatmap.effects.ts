@@ -11,14 +11,7 @@ import * as SeatmapActions from './seatmap.actions';
 export class SeatmapEffects {
 
 
-  loadSeatmaps$ = createEffect(() => {
-    return this.actions$.pipe( 
-
-      ofType(SeatmapActions.loadSeatmaps),
-      /** An EMPTY observable only emits completion. Replace with your own observable API request */
-      concatMap(() => EMPTY)
-    );
-  });
+  loadSeatmaps$ = createEffect(() => this.actions$.pipe(ofType(SeatmapActions.loadSeatmaps))).pipe(concatMap(() => EMPTY));
 
 
   constructor(private actions$: Actions) {}
