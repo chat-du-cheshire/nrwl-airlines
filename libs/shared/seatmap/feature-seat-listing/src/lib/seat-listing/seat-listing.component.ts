@@ -12,4 +12,8 @@ export class SeatListingComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSeatConfirmed(isConfirmed: boolean): void { // 👈
+    console.log('Is seat confirmed?', isConfirmed);
+  }
+
 }
